@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hover</title>
+</head>
+<body class="m-20">
+    
+    <button class="outline outline-2 outline-green-700 px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white hover:rounded-none hover:outline-none">Hover</button>
+    <div class="p-10 shadow-xl w-1/2 mt-10 hover:bg-green-700 hover:shadow-none">
+        <h2 class="font-bold hover:text-white">This is heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet voluptates natus ut optio cupiditate, deleniti dolores odit rerum amet facilis, sint vero ratione perspiciatis laboriosam, molestiae vel quam iusto.</p>
+    </div>
+
+    <!--Group-->
+    <div class="group p-10 shadow-xl w-1/2 mt-10 hover:bg-green-700 hover:shadow-none">
+        <h2 class="font-bold group-hover:text-white">This is heading</h2>
+        <p class="group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet voluptates natus ut optio cupiditate, deleniti dolores odit rerum amet facilis, sint vero ratione perspiciatis laboriosam, molestiae vel quam iusto.</p>
+    </div>
+
+    <p class="mt-10 select-none">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nam voluptates quaerat libero. Eius ex blanditiis consequatur ipsa error. Dicta repudiandae, dolor vel corrupti consectetur quos impedit molestias tenetur?
+    </p>
+    <p class="mt-10 select-all">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi doloribus nam voluptates quaerat libero. Eius ex blanditiis consequatur ipsa error. Dicta repudiandae, dolor vel corrupti consectetur quos impedit molestias tenetur?
+    </p>
+
+    <button class="px-4 py-2 bg-green-700 mt-10 text-white rounded-xl cursor-not-allowed">Hover</button>
+
+    <button class="px-4 py-2 bg-green-700 mt-10 text-white rounded-xl cursor-progress">Loading...</button>
+
+    <p class="hover:cursor-pointer mt-10">hover over this</p>
+
+    <!--
+        cursor-not-allowed          -- Not clickable or access deinied
+        cursor-progress             -- Loading icon
+        select-none                 -- text not selectable
+        select-all                  --- select all text
+        hover                       -- only use design on hover
+        group                       -- group all inner elements
+        group-hover                 -- used to relate to group parent
+        cursor-pointer              -- change cursor to pointer
+    -->
+</body>
+</html>
